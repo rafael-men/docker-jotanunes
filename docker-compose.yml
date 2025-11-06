@@ -46,7 +46,7 @@ services:
       dockerfile: docker/dockerfiles/jdk21-distroless-mvn/Dockerfile
       args:
         SERVICE_NAME: api-monolito
-        ENV_FILE: .env.prod.properties
+        ENV_FILE: .env.properties
         PORT: 13000
     container_name: monolito_api
     ports:
