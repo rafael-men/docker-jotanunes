@@ -40,7 +40,7 @@ services:
       - ./logs/nginx-logs:/var/log/nginx
 
   monolito_api:
-    # image: yuri000/monolito_api:latest
+    image: s13-monolito_api:latest
     build:
       context: ..
       dockerfile: docker/dockerfiles/jdk21-distroless-mvn/Dockerfile
